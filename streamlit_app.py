@@ -18,11 +18,13 @@ with tab1:
     
     with col1:
       w_tab1 = st.slider("Peso", min_value=0, max_value=10, value=0, step=0.1)
+  
+    with col2:
       x_tab1 = st.slider("Entrada", min_value=-100, max_value=100, value=0, step=0.1)
       
-      y_tab1 = w_tab1 * x_tab1
+    y_tab1 = w_tab1 * x_tab1
       
-      st.write("La salida de la neurona es", y_tab1)
+    st.write("La salida de la neurona es", y_tab1)
     
 with tab2:
     st.markdown("## Dos entradas")
