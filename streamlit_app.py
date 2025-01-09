@@ -17,10 +17,10 @@ with tab1:
     col1, col2 = st.columns(2)
     
     with col1:
-      w_tab1 = st.slider("Peso", 0, 10, 5, 0.1)
+      w_tab1 = st.slider("Peso", 0, 10, 5)
   
     with col2:
-      x_tab1 = st.slider("Entrada", -100, 100, 5, 0.1)
+      x_tab1 = st.number_input("Entrada")
       
     y_tab1 = w_tab1 * x_tab1
       
