@@ -45,17 +45,17 @@ with tab2:
 with tab3:
     st.markdown("## Tres entradas con bias (sesgo)")
     
-    col4, col5, col6 = st.columns(3)
+    col5, col6, col7 = st.columns(3)
     
-    with col4:
+    with col5:
       w0_tab3 = st.slider("Peso 1", 1.0, 10.0)
       x0_tab3 = st.number_input("Entrada 1")
       
-    with col5:
+    with col6:
       w1_tab3 = st.slider("Peso 2", 1.0, 10.0)
       x1_tab3 = st.number_input("Entrada 2")
       
-    with col6:
+    with col7:
       w2_tab3 = st.slider("Peso 3", 1.0, 10.0)
       x2_tab3 = st.number_input("Entrada 3")
       
