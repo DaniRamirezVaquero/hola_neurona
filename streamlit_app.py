@@ -24,6 +24,8 @@ with tab1:
         x_tab1 = st.number_input("Entrada", key="x_tab1")
 
     y_tab1 = w_tab1 * x_tab1
+    
+    st.latex(r'y = w \cdot x')
 
     st.write("La salida de la neurona es", round(y_tab1, 2))
 
@@ -40,6 +42,8 @@ with tab2:
         x1_tab2 = st.number_input("Estrada 2", key="x1_tab2")
 
     y_tab2 = round(w0_tab2 * x0_tab2 + w1_tab2 * x1_tab2, 2)
+    
+    st.latex(r'y = w_0 \cdot x_0 + w_1 \cdot x_1')
 
     st.write("La salida de la neurona es", y_tab2)
 
@@ -64,5 +68,7 @@ with tab3:
 
     y_tab3 = round(w0_tab3 * x0_tab3 + w1_tab3 *
                    x1_tab3 + w2_tab3 * x2_tab3 + b_tab3, 2)
+    
+    st.latex(r'y = w_0 \cdot x_0 + w_1 \cdot x_1 + w_2 \cdot x_2 + b')
 
     st.write("La salida de la neurona es", y_tab3)
