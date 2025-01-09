@@ -31,11 +31,11 @@ with tab2:
     
     col3, col4 = st.columns(2)
     with col3:
-      w0_tab2 = st.slider("Peso 1", 1.0, 10.0)
+      w0_tab2 = st.slider("Peso 1", -10.0, 10.0, 0.0)
       x0_tab2 = st.number_input("Entrada 1")
       
     with col4:
-      w1_tab2 = st.slider("Peso 2", 1.0, 10.0)
+      w1_tab2 = st.slider("Peso 2", -10.0, 10.0, 0.0)
       x1_tab2 = st.number_input("Estrada 2")
       
     y_tab2 = round(w0_tab2 * x0_tab2 + w1_tab2 * x1_tab2, 2)
@@ -48,18 +48,18 @@ with tab3:
     col5, col6, col7 = st.columns(3)
     
     with col5:
-      w0_tab3 = st.slider("Peso 1", 1.0, 10.0)
+      w0_tab3 = st.slider("Peso 1", -10.0, 10.0, 0.0)
       x0_tab3 = st.number_input("Entrada 1")
       
     with col6:
-      w1_tab3 = st.slider("Peso 2", 1.0, 10.0)
+      w1_tab3 = st.slider("Peso 2", -10.0, 10.0, 0.0)
       x1_tab3 = st.number_input("Entrada 2")
       
     with col7:
-      w2_tab3 = st.slider("Peso 3", 1.0, 10.0)
+      w2_tab3 = st.slider("Peso 3", -10.0, 10.0, 0.0)
       x2_tab3 = st.number_input("Entrada 3")
       
-    b_tab3 = st.slider("Bias", -10.0, 10.0)
+    b_tab3 = st.slider("Bias", -10.0, 10.0, 0.0)
     
     y_tab3 = round(w0_tab3 * x0_tab3 + w1_tab3 * x1_tab3 + w2_tab3 * x2_tab3 + b_tab3, 2)
     
