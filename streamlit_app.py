@@ -17,26 +17,26 @@ with tab1:
     
     col1, col2 = st.columns(2)
     with col1:
-      w_tab1 = st.number_input("Peso") 
+      w_tab1 = st.number_input("Peso", key="w_tab1") 
   
     with col2:
-      x_tab1 = st.number_input("Entrada")
+      x_tab1 = st.number_input("Entrada", key="x_tab1")
       
-    y_tab1 = w_tab1 * x_tab1
+y_tab1 = w_tab1 * x_tab1
       
-    st.write("La salida de la neurona es", round(y_tab1, 2))
+st.write("La salida de la neurona es", round(y_tab1, 2))
     
 with tab2:
     st.markdown("## Dos entradas")
     
     col3, col4 = st.columns(2)
     with col3:
-      w0_tab2 = st.slider("Peso 1", -10.0, 10.0, 0.0)
-      x0_tab2 = st.number_input("Entrada 1")
+      w0_tab2 = st.slider("Peso 1", -10.0, 10.0, 0.0, key="w0_tab2")
+      x0_tab2 = st.number_input("Entrada 1", key="x0_tab2")
       
     with col4:
-      w1_tab2 = st.slider("Peso 2", -10.0, 10.0, 0.0)
-      x1_tab2 = st.number_input("Estrada 2")
+      w1_tab2 = st.slider("Peso 2", -10.0, 10.0, 0.0, key="w1_tab2")
+      x1_tab2 = st.number_input("Estrada 2", key="x1_tab2")
       
     y_tab2 = round(w0_tab2 * x0_tab2 + w1_tab2 * x1_tab2, 2)
       
@@ -48,20 +48,19 @@ with tab3:
     col5, col6, col7 = st.columns(3)
     
     with col5:
-      w0_tab3 = st.slider("Peso 1", -10.0, 10.0, 0.0)
-      x0_tab3 = st.number_input("Entrada 1")
+      w0_tab3 = st.slider("Peso 1", -10.0, 10.0, 0.0, key="w0_tab3")
+      x0_tab3 = st.number_input("Entrada 1", key="x0_tab3")
       
     with col6:
-      w1_tab3 = st.slider("Peso 2", -10.0, 10.0, 0.0)
-      x1_tab3 = st.number_input("Entrada 2")
+      w1_tab3 = st.slider("Peso 2", -10.0, 10.0, 0.0, key="w1_tab3")
+      x1_tab3 = st.number_input("Entrada 2", key="x1_tab3")
       
     with col7:
-      w2_tab3 = st.slider("Peso 3", -10.0, 10.0, 0.0)
-      x2_tab3 = st.number_input("Entrada 3")
+      w2_tab3 = st.slider("Peso 3", -10.0, 10.0, 0.0, key="w2_tab3")
+      x2_tab3 = st.number_input("Entrada 3", key="x2_tab3")
       
-    b_tab3 = st.slider("Bias", -10.0, 10.0, 0.0)
+    b_tab3 = st.slider("Bias", -10.0, 10.0, 0.0, key="b_tab3")
     
     y_tab3 = round(w0_tab3 * x0_tab3 + w1_tab3 * x1_tab3 + w2_tab3 * x2_tab3 + b_tab3, 2)
     
-    print("La salida de la neurona es", y_tab3)
-    
+    st.write("La salida de la neurona es", y_tab3)
